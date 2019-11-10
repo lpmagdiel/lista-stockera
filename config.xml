@@ -17,6 +17,10 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <config-file target="AndroidManifest.xml" parent="/*">
+        <uses-permission android:name="android.permission.CAMERA" />
+    </config-file>
+
     <platform name="android">
         <allow-intent href="market:*" />
         <icon src="icon.png"/>
